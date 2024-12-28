@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/homeScreen.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+</head>
+<body>
+
+  <p class="Periodic">Periodic Table</p>
+   
+   <div class="types">
+    <div class="nonMetal common"> Non Metals </div>
+    <div class="nobleGases common"> Noble Gases </div>
+    <div class="alkaliMetals common"> Alkali Metals </div>
+    <div class="alkaliEarthMetals common"> Alkali Earth Metals </div>
+    <div class="halogens common"> Halogens </div>
+    <div class="transitionMetals common"> Transition Metals </div>
+    <div class="lanthanoids common"> Lanthanoids </div>
+    <div class="actinoids common"> Actinoids </div>
+    <div class="metalloids common"> Metalloids </div>
+    <div class="postTransitionMetals common"> Post Transition Metals </div>
+   </div>
+
+
+  <div class="main">
+  
+    <div class="container1">
+         <!-- Hydrogen -->
+      <div class="element nonMetal" onclick="showDetails('H', 'Hydrogen', '1', '1.008', 'Hydrogen was discovered by Henry Cavendish in 1766. It is the lightest element in the periodic table.', '1', '1', 's', '−259.16°C, −434.49°F, 13.99 K', '−252.879°C, −423.182°F, 20.271 K', '0.000082', '1.008', 'Gas', '1H, 2H', '1s1', '133-74-0', 'Hydrogen was discovered by Henry Cavendish in 1766.')">
+        <p class="number">1</p>
+        <p class="symbol">H</p>
+        <p class="atomicNum">1.008</p>
+        <p class="name">Hydrogen</p>
+      </div>
+
+      <!-- Helium -->
+      <div class="element nobleGases" onclick="showDetails('He', 'Helium', '2', '4.0026', 'Helium was discovered by Pierre Janssen in 1868. It is a colorless, odorless, and inert gas.', '18', '1', 's', '−272.2°C, −458°F, 0.95 K', '−268.93°C, −452.07°F, 4.22 K', '0.0001786', '4.0026', 'Gas', '3He, 4He', '1s2', '7440-59-7', 'Helium was discovered by Pierre Janssen in 1868 and is the second lightest element.')">
+        <p class="number">2</p>
+        <p class="symbol">He</p>
+        <p class="atomicNum">4.0026</p>
+        <p class="name">Helium</p>
+      </div>
+        </div>
+    
+        <!-- Modal for detailed information -->
+        
+
+    <!-- Container 2-->
+      <div class="container2">
+
+              <!-- Lithium -->
+      <div class="elements alkaliMetals" onclick="showDetails('Li', 'Lithium', '3', '6.94', 'Lithium was discovered by Johann August Arfvedson in 1817. It is a soft, silvery-white alkali metal.', '1', '2', 's', '180.54°C, 357°F', '159.0°C, 318.2°F', '0.534', '6.94', 'Solid', '6Li, 7Li', '2s1', '7439-93-2', 'Lithium was discovered by Johann August Arfvedson in 1817 and is used in rechargeable batteries.')">
+        <p class="number">3</p>
+        <p class="symbol">Li</p>
+        <p class="atomicNum">6.94</p>
+        <p class="name">Lithium</p>
+      </div>
+
+      <!-- Beryllium -->
+      <div class="elements alkaliEarthMetals" onclick="showDetails('Be', 'Beryllium', '4', '9.0122', 'Beryllium was discovered by Louis-Nicolas Vauquelin in 1798. It is a hard, grayish metal that is brittle at room temperature.', '2', '2', 's', '1287°C, 2349°F', '2471°C, 4479°F', '1.848', '9.0122', 'Solid', '9Be', '2s2', '7440-41-7', 'Beryllium was discovered by Louis-Nicolas Vauquelin in 1798 and is used in aerospace materials.')">
+        <p class="number">4</p>
+        <p class="symbol">Be</p>
+        <p class="atomicNum">9.0122</p>
+        <p class="name">Beryllium</p>
+      </div>
+
+      <div class="spacer"></div>
+
+      <div class="elements metalloids" onclick="showDetails('B', 'Boron', '5', '10.81', 'Boron was discovered by Joseph Louis Gay-Lussac and Louis Jacques Thénard in 1808. It is a metalloid and has high strength and hardness.', 
+      '13', '2', 'p', '2076°C, 3769°F', '4000°C, 7232°F', '2.34', '10.81', 'Solid', '10B, 11B', '2s2 2p1', '7440-42-8', 'Boron was discovered in 1808 and is used in glass, fiberglass, and detergent formulations.')">
+<p class="number">5</p>
+<p class="symbol">B</p>
+<p class="atomicNum">10.81</p>
+<p class="name">Boron</p>
+</div>
+
+<div class="elements nonMetal" onclick="showDetails('C', 'Carbon', '6', '12.011', 'Carbon was discovered by ancient civilizations. It is the building block of life and can exist in several forms such as graphite, diamond, and fullerenes.', 
+      '14', '2', 'p', '3550°C, 6422°F', '4827°C, 8720°F', '2.267', '12.011', 'Solid', '12C, 13C, 14C', '2s2 2p2', '7440-44-0', 'Carbon is one of the most important elements and is the basis for all life on Earth.')">
+<p class="number">6</p>
+<p class="symbol">C</p>
+<p class="atomicNum">12.011</p>
+<p class="name">Carbon</p>
+</div>
+
+<div class="elements nonMetal" onclick="showDetails('N', 'Nitrogen', '7', '14.007', 'Nitrogen was discovered by Daniel Rutherford in 1772. It is a colorless, odorless, and inert gas that makes up 78% of Earth\'s atmosphere.', 
+      '15', '2', 'p', '-210°C, -346°F', '-195.79°C, -320.42°F', '0.0012506', '14.007', 'Gas', '14N, 15N', '2s2 2p3', '7727-37-9', 'Nitrogen is essential for life, particularly in proteins and nucleic acids.')">
+<p class="number">7</p>
+<p class="symbol">N</p>
+<p class="atomicNum">14.007</p>
+<p class="name">Nitrogen</p>
+</div>
+
+<div class="elements nonMetal" onclick="showDetails('O', 'Oxygen', '8', '15.999', 'Oxygen was discovered by Joseph Priestley and Carl Wilhelm Scheele in 1774. It is a highly reactive element and is essential for respiration in most organisms.', 
+      '16', '2', 'p', '-218.79°C, -361.82°F', '-182.96°C, -297.33°F', '0.001429', '15.999', 'Gas', '16O', '2s2 2p4', '7782-44-7', 'Oxygen is vital for life and combustion processes.')">
+<p class="number">8</p>
+<p class="symbol">O</p>
+<p class="atomicNum">15.999</p>
+<p class="name">Oxygen</p>
+</div>
+
+<div class="elements halogens" onclick="showDetails('F', 'Fluorine', '9', '18.998', 'Fluorine was discovered by Henri Moissan in 1886. It is a pale yellow gas that is the most reactive and electronegative element.', 
+      '17', '2', 'p', '-219.67°C, -363.41°F', '-188.12°C, -306.62°F', '0.001696', '18.998', 'Gas', '19F', '2s2 2p5', '7782-41-4', 'Fluorine is highly reactive and is used in various chemical processes, including in Teflon production.')">
+<p class="number">9</p>
+<p class="symbol">F</p>
+<p class="atomicNum">18.998</p>
+<p class="name">Fluorine</p>
+</div>
+
+<div class="elements nobleGases" onclick="showDetails('Ne', 'Neon', '10', '20.180', 'Neon was discovered by William Ramsay and Morris Travers in 1898. It is a colorless, odorless gas and is used in neon signs.', 
+      '18', '2', 'p', '-248.59°C, -415.46°F', '-246.08°C, -410.94°F', '0.0008999', '20.180', 'Gas', '20Ne', '2s2 2p6', '7440-01-9', 'Neon is primarily used in signs and lighting, giving off a bright glow when electrically charged.')">
+<p class="number">10</p>
+<p class="symbol">Ne</p>
+<p class="atomicNum">20.180</p>
+<p class="name">Neon</p>
+</div>
+
+
+        
+   </div>      
+ 
+   <!--container 3-->
+   <div class="container3">
+
+    <div class="elements alkaliMetals" onclick="showDetails('Na', 'Sodium', '11', '22.990', 'Sodium was discovered by Humphry Davy in 1807. It is a soft, silvery-white, highly reactive metal, commonly found in table salt.', 
+            '1', '3', 's', '97.72°C, 207.9°F', '883°C, 1621.4°F', '0.971', '22.990', 'Solid', '23Na', '3s1', '7440-23-5', 'Sodium is used in street lighting, soap making, and as a key element in many chemical reactions.')">
+    <p class="number">11</p>
+    <p class="symbol">Na</p>
+    <p class="atomicNum">22.990</p>
+    <p class="name">Sodium</p>
+</div>
+
+<div class="elements alkaliEarthMetals" onclick="showDetails('Mg', 'Magnesium', '12', '24.305', 'Magnesium was discovered by Joseph Black in 1755. It is a shiny gray solid and is the eighth most abundant element in the Earth\'s crust.', 
+            '2', '3', 's', '650°C, 1202°F', '1090°C, 1994°F', '1.738', '24.305', 'Solid', '24Mg', '3s2', '7439-95-4', 'Magnesium is widely used in alloys and is a key component in the production of aluminum and as a nutrient in the human body.')">
+    <p class="number">12</p>
+    <p class="symbol">Mg</p>
+    <p class="atomicNum">24.305</p>
+    <p class="name">Magnesium</p>
+</div>
+
+  <div class="spacer"></div>
+  
+  <div class="elements postTransitionMetals" onclick="showDetails('Al', 'Aluminum', '13', '26.982', 'Aluminum was discovered by Hans Christian Ørsted in 1825. It is a silvery-white, non-magnetic, and soft metal.', 
+            '3', '3', 'p', '660.32°C, 1220.58°F', '2470°C, 4478°F', '2.70', '26.982', 'Solid', '27Al', '3p1', '7429-90-5', 'Aluminum is widely used in the aerospace, automotive, and packaging industries.')">
+    <p class="number">13</p>
+    <p class="symbol">Al</p>
+    <p class="atomicNum">26.982</p>
+    <p class="name">Aluminum</p>
+</div>
+
+<div class="elements metalloids" onclick="showDetails('Si', 'Silicon', '14', '28.085', 'Silicon was discovered by Jöns Jacob Berzelius in 1824. It is a hard, brittle crystalline solid with a blue-grey metallic luster.', 
+            '4', '3', 'p', '1414°C, 2577°F', '2900°C, 5220°F', '2.33', '28.085', 'Solid', '28Si', '3p2', '7440-21-3', 'Silicon is used in semiconductor devices and is a key component in the production of computer chips.')">
+    <p class="number">14</p>
+    <p class="symbol">Si</p>
+    <p class="atomicNum">28.085</p>
+    <p class="name">Silicon</p>
+</div>
+
+<div class="elements nonMetal" onclick="showDetails('P', 'Phosphorus', '15', '30.974', 'Phosphorus was discovered by Hennig Brand in 1669. It is a highly reactive, non-metallic element, commonly used in fertilizers.', 
+            '5', '3', 'p', '44.15°C, 111.47°F', '280°C, 536°F', '1.82', '30.974', 'Solid', '31P', '3p3', '7723-14-0', 'Phosphorus is widely used in fertilizers, detergents, and pesticides.')">
+    <p class="number">15</p>
+    <p class="symbol">P</p>
+    <p class="atomicNum">30.974</p>
+    <p class="name">Phosphorus</p>
+</div>
+
+<div class="elements nonMetal" onclick="showDetails('S', 'Sulfur', '16', '32.06', 'Sulfur was known to ancient civilizations, including the Greeks and Egyptians. It is a yellow, non-metallic element with a pungent odor when burned.', 
+            '6', '3', 'p', '115.21°C, 239.38°F', '444.6°C, 832.28°F', '2.07', '32.06', 'Solid', '32S', '3p4', '7704-34-9', 'Sulfur is used in the production of sulfuric acid and in vulcanization of rubber.')">
+    <p class="number">16</p>
+    <p class="symbol">S</p>
+    <p class="atomicNum">32.06</p>
+    <p class="name">Sulfur</p>
+</div>
+
+<div class="elements halogens" onclick="showDetails('Cl', 'Chlorine', '17', '35.45', 'Chlorine was discovered by Carl Wilhelm Scheele in 1774. It is a yellow-green gas with a strong, pungent odor.', 
+            '7', '3', 'p', '-101.5°C, -150.7°F', '58.8°C, 137.8°F', '0.0032', '35.45', 'Gas', '35Cl', '3p5', '7782-50-5', 'Chlorine is widely used for disinfection, in the production of PVC, and in bleaching processes.')">
+    <p class="number">17</p>
+    <p class="symbol">Cl</p>
+    <p class="atomicNum">35.45</p>
+    <p class="name">Chlorine</p>
+</div>
+
+<div class="elements nobleGases" onclick="showDetails('Ar', 'Argon', '18', '39.948', 'Argon was discovered by Lord Rayleigh and Sir William Ramsay in 1894. It is a colorless, odorless, inert gas.', 
+            '8', '3', 'p', '-189.34°C, -308.83°F', '-185.85°C, -302.53°F', '1.784', '39.948', 'Gas', '40Ar', '3p6', '7440-37-1', 'Argon is used in light bulbs, welding, and as a protective gas in industrial applications.')">
+    <p class="number">18</p>
+    <p class="symbol">Ar</p>
+    <p class="atomicNum">39.948</p>
+    <p class="name">Argon</p>
+</div>
+
+   </div>
+
+       
+
+
+    <div class="container4">
+        <div class="element alkaliMetals" onclick="showDetails('K', 'Potassium', '19', '39.098', 'Potassium was discovered by Sir Humphry Davy in 1807. It is a soft, wax-like, silvery metal, highly reactive in water.',
+        '4', '4', 's', '63.5°C, 146.3°F', '759°C, 1398°F', '0.862', '39.098', 'Solid', '39K', '4s1', '7440-09-7', 'Potassium is essential for plant growth and is used in fertilizers.')">
+<p class="number check">19</p>
+<p class="symbol">K</p>
+<p class="atomicNum">39.098</p>
+<p class="name">Potassium</p>
+</div>
+
+<div class="element alkaliEarthMetals" onclick="showDetails('Ca', 'Calcium', '20', '40.078', 'Calcium was discovered by Humphry Davy in 1808. It is a soft, gray alkaline earth metal, essential in biological systems.',
+        '2', '4', 's', '842°C, 1548°F', '1484°C, 2703°F', '1.54', '40.078', 'Solid', '40Ca', '4s2', '7440-70-2', 'Calcium is used in cement, steel production, and biological processes in bones and teeth.')">
+<p class="number">20</p>
+<p class="symbol">Ca</p>
+<p class="atomicNum">40.078</p>
+<p class="name">Calcium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Sc', 'Scandium', '21', '44.956', 'Scandium was discovered by Lars Fredrik Nilson in 1879. It is a soft, silvery-white transition metal with a low melting point.',
+        '3', '4', 'd', '1541°C, 2806°F', '2836°C, 5137°F', '2.985', '44.956', 'Solid', '45Sc', '3d1 4s2', '7440-20-2', 'Scandium is used in aerospace alloys and sports equipment.')">
+<p class="number">21</p>
+<p class="symbol">Sc</p>
+<p class="atomicNum">44.956</p>
+<p class="name">Scandium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Ti', 'Titanium', '22', '47.867', 'Titanium was discovered by William Gregor in 1791. It is a strong, lightweight, and corrosion-resistant metal.',
+        '4', '4', 'd', '1668°C, 3034°F', '3287°C, 5949°F', '4.506', '47.867', 'Solid', '48Ti', '3d2 4s2', '7440-32-6', 'Titanium is used in aerospace, medical devices, and jewelry due to its strength and resistance to corrosion.')">
+<p class="number">22</p>
+<p class="symbol">Ti</p>
+<p class="atomicNum">47.867</p>
+<p class="name">Titanium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('V', 'Vanadium', '23', '50.942', 'Vanadium was discovered by Andrés Manuel del Río in 1801. It is a hard, silvery-gray transition metal.',
+        '5', '4', 'd', '1910°C, 3470°F', '3380°C, 6120°F', '6.11', '50.942', 'Solid', '51V', '3d3 4s2', '7440-62-2', 'Vanadium is used in the production of strong steel alloys and in energy storage.')">
+<p class="number">23</p>
+<p class="symbol">V</p>
+<p class="atomicNum">50.942</p>
+<p class="name">Vanadium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Cr', 'Chromium', '24', '51.996', 'Chromium was discovered by Louis-Nicolas Vauquelin in 1797. It is a shiny, steel-gray metal, highly corrosion-resistant.',
+        '6', '4', 'd', '1907°C, 3465°F', '2671°C, 4840°F', '7.19', '51.996', 'Solid', '52Cr', '3d5 4s1', '7440-47-3', 'Chromium is used in plating, stainless steel production, and as a pigment in dyes.')">
+<p class="number">24</p>
+<p class="symbol">Cr</p>
+<p class="atomicNum">51.996</p>
+<p class="name">Chromium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Mn', 'Manganese', '25', '54.938', 'Manganese was discovered by Johann Gottlieb Gahn in 1774. It is a gray-white metal used in steel production.',
+'7', '4', 'd', '1244°C, 2271°F', '2095°C, 3803°F', '7.43', '54.938', 'Solid', '55Mn', '3d5 4s2', '7439-96-5', 'Manganese is an essential element in steel manufacturing and battery production.')">
+<p class="number">25</p>
+<p class="symbol">Mn</p>
+<p class="atomicNum">54.938</p>
+<p class="name">Manganese</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Fe', 'Iron', '26', '55.845', 'Iron has been known since antiquity. It is a strong metal commonly used in construction and manufacturing.',
+'8', '4', 'd', '1538°C, 2800°F', '2862°C, 5192°F', '7.87', '55.845', 'Solid', '56Fe', '3d6 4s2', '7439-89-6', 'Iron is used in the production of steel, tools, and machinery.')">
+<p class="number">26</p>
+<p class="symbol">Fe</p>
+<p class="atomicNum">55.845</p>
+<p class="name">Iron</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Co', 'Cobalt', '27', '58.933', 'Cobalt was discovered by Georg Brandt in 1735. It is a hard, lustrous metal used in alloys.',
+'9', '4', 'd', '1495°C, 2723°F', '2927°C, 5301°F', '8.90', '58.933', 'Solid', '59Co', '3d7 4s2', '7440-48-4', 'Cobalt is used in rechargeable batteries, superalloys, and as a catalyst.')">
+<p class="number">27</p>
+<p class="symbol">Co</p>
+<p class="atomicNum">58.933</p>
+<p class="name">Cobalt</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Ni', 'Nickel', '28', '58.693', 'Nickel was discovered by Axel Fredrik Cronstedt in 1751. It is a silvery-white metal commonly used in alloys.',
+'10', '4', 'd', '1455°C, 2651°F', '2913°C, 5281°F', '8.908', '58.693', 'Solid', '59Ni', '3d8 4s2', '7440-02-0', 'Nickel is used in stainless steel, coinage, and as a catalyst in hydrogenation.')">
+<p class="number">28</p>
+<p class="symbol">Ni</p>
+<p class="atomicNum">58.693</p>
+<p class="name">Nickel</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Cu', 'Copper', '29', '63.546', 'Copper has been known since antiquity. It is a reddish-brown metal used in electrical wiring.',
+'11', '4', 'd', '1085°C, 1985°F', '2562°C, 4643°F', '8.96', '63.546', 'Solid', '63Cu', '3d10 4s1', '7440-50-8', 'Copper is used in electrical wiring, plumbing, and as a heat conductor.')">
+<p class="number">29</p>
+<p class="symbol">Cu</p>
+<p class="atomicNum">63.546</p>
+<p class="name">Copper</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Zn', 'Zinc', '30', '65.38', 'Zinc was discovered by Andreas Marggraf in 1746. It is a bluish-white metal used for galvanization.',
+'12', '4', 'd', '419°C, 786°F', '907°C, 1665°F', '7.14', '65.38', 'Solid', '64Zn', '3d10 4s2', '7440-66-6', 'Zinc is used for galvanizing iron and steel, as a dietary supplement, and in batteries.')">
+<p class="number">30</p>
+<p class="symbol">Zn</p>
+<p class="atomicNum">65.38</p>
+<p class="name">Zinc</p>
+</div>
+
+<div class="element postTransitionMetals" onclick="showDetails('Ga', 'Gallium', '31', '69.723', 'Gallium was discovered by Paul-Émile Lecoq de Boisbaudran in 1875. It is a soft, silvery-white metal used in semiconductors.',
+'13', '4', 'p', '29.76°C, 85.57°F', '2204°C, 3999°F', '5.91', '69.723', 'Solid', '69Ga', '4d10 5s2', '7440-55-3', 'Gallium is used in semiconductors, solar panels, and LEDs.')">
+<p class="number">31</p>
+<p class="symbol">Ga</p>
+<p class="atomicNum">69.723</p>
+<p class="name">Gallium</p>
+</div>
+
+<div class="element metalloids" onclick="showDetails('Ge', 'Germanium', '32', '72.63', 'Germanium was discovered by Clemens Winkler in 1886. It is a brittle, grayish-white metalloid used in electronics.',
+'14', '4', 'p', '938.3°C, 1720.9°F', '2833°C, 5131.4°F', '5.323', '72.63', 'Solid', '73Ge', '4d10 5s2 5p2', '7440-56-4', 'Germanium is used in fiber optics, semiconductors, and infrared optics.')">
+<p class="number">32</p>
+<p class="symbol">Ge</p>
+<p class="atomicNum">72.63</p>
+<p class="name">Germanium</p>
+</div>
+
+    
+<div class="element metalloids" onclick="showDetails('As', 'Arsenic', '33', '74.922', 'Arsenic is a metalloid that has been known since antiquity. It is a poisonous element used in pesticides and electronics.',
+        '15', '4', 'p', '817°C, 1503°F', '613°C, 1135°F', '5.72', '74.922', 'Solid', '75As', '4s2 3d10 4p3', '7440-38-2', 'Arsenic is used in semiconductors, wood preservatives, and as a carcinogen in some instances.')">
+    <p class="number">33</p>
+    <p class="symbol">As</p>
+    <p class="atomicNum">74.922</p>
+    <p class="name">Arsenic</p>
+</div>
+
+<div class="element nonMetal" onclick="showDetails('Se', 'Selenium', '34', '78.96', 'Selenium was discovered by Jöns Jakob Berzelius in 1817. It is a nonmetal used in photocells and solar cells.',
+        '16', '4', 'p', '221°C, 429.8°F', '685°C, 1265°F', '4.79', '78.96', 'Solid', '79Se', '4s2 3d10 4p4', '7782-49-2', 'Selenium is used in electronics, glassmaking, and as an essential nutrient.')">
+    <p class="number">34</p>
+    <p class="symbol">Se</p>
+    <p class="atomicNum">78.96</p>
+    <p class="name">Selenium</p>
+</div>
+
+<div class="element halogens" onclick="showDetails('Br', 'Bromine', '35', '79.904', 'Bromine was discovered by Antoine Jérôme Balard in 1826. It is a reddish-brown liquid used in flame retardants.',
+        '17', '4', 'p', '19°C, 66.2°F', '58.8°C, 137.8°F', '3.1028', '79.904', 'Liquid', '80Br', '4s2 3d10 4p5', '7726-95-6', 'Bromine is used in flame retardants, pharmaceuticals, and as an industrial disinfectant.')">
+    <p class="number">35</p>
+    <p class="symbol">Br</p>
+    <p class="atomicNum">79.904</p>
+    <p class="name">Bromine</p>
+</div>
+
+<div class="element nobleGases" onclick="showDetails('Kr', 'Krypton', '36', '83.798', 'Krypton was discovered by Sir William Ramsay and Morris Travers in 1898. It is a noble gas used in fluorescent lights.',
+        '18', '4', 'p', '-157.36°C, -251.25°F', '141.3°C, 286.3°F', '3.749', '83.798', 'Gas', '84Kr', '4s2 3d10 4p6', '7439-90-9', 'Krypton is used in lighting and photography, and in some gas discharge tubes.')">
+    <p class="number">36</p>
+    <p class="symbol">Kr</p>
+    <p class="atomicNum">83.798</p>
+    <p class="name">Krypton</p>
+</div>
+
+<!-- row 4 -->
+<div class="element alkaliMetals" onclick="showDetails('Rb', 'Rubidium', '37', '85.468', 'Rubidium was discovered by Robert Bunsen and Gustav Kirchhoff in 1861. It is a soft, silvery-white alkali metal.',
+        '1', '5', 's', '39.3°C, 102.7°F', '688°C, 1270°F', '1.532', '85.468', 'Solid', '87Rb', '5s1', '7440-17-7', 'Rubidium is used in research, atomic clocks, and as a getter in vacuum tubes.')">
+    <p class="number">37</p>
+    <p class="symbol">Rb</p>
+    <p class="atomicNum">85.468</p>
+    <p class="name">Rubidium</p>
+</div>
+
+<div class="element alkaliEarthMetals" onclick="showDetails('Sr', 'Strontium', '38', '87.62', 'Strontium was discovered by William Cruickshank in 1790. It is a soft, silvery metal used in fireworks.',
+        '2', '5', 's', '777°C, 1431°F', '1382°C, 2540°F', '2.64', '87.62', 'Solid', '88Sr', '5s2', '7440-24-6', 'Strontium is used in fireworks, ferrite magnets, and in producing strontium carbonate for ceramics.')">
+    <p class="number">38</p>
+    <p class="symbol">Sr</p>
+    <p class="atomicNum">87.62</p>
+    <p class="name">Strontium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Y', 'Yttrium', '39', '88.905', 'Yttrium was discovered by Johan Gadolin in 1794. It is a transition metal used in superconductors.',
+        '3', '5', 'd', '1526°C, 2780°F', '3339°C, 6042°F', '4.47', '88.905', 'Solid', '89Y', '4d1 5s2', '7440-65-5', 'Yttrium is used in superconductors, LEDs, and in nuclear reactors.')">
+    <p class="number">39</p>
+    <p class="symbol">Y</p>
+    <p class="atomicNum">88.905</p>
+    <p class="name">Yttrium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Zr', 'Zirconium', '40', '91.224', 'Zirconium was discovered by Martin Heinrich Klaproth in 1789. It is a strong, corrosion-resistant metal.',
+        '4', '5', 'd', '1855°C, 3371°F', '4377°C, 7911°F', '6.52', '91.224', 'Solid', '90Zr', '4d2 5s2', '7440-67-7', 'Zirconium is used in nuclear reactors, aircraft engines, and medical devices.')">
+    <p class="number">40</p>
+    <p class="symbol">Zr</p>
+    <p class="atomicNum">91.224</p>
+    <p class="name">Zirconium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Nb', 'Niobium', '41', '92.906', 'Niobium was discovered by Charles Hatchett in 1801. It is a transition metal used in steel production.',
+        '5', '5', 'd', '2477°C, 4487°F', '4744°C, 8570°F', '8.57', '92.906', 'Solid', '93Nb', '4d4 5s1', '7440-03-1', 'Niobium is used in superconducting magnets, steel alloys, and nuclear reactors.')">
+    <p class="number">41</p>
+    <p class="symbol">Nb</p>
+    <p class="atomicNum">92.906</p>
+    <p class="name">Niobium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Mo', 'Molybdenum', '42', '95.95', 'Molybdenum was discovered by Carl Wilhelm Scheele in 1778. It is a high-melting-point metal used in steel alloys.',
+        '6', '5', 'd', '2623°C, 4753°F', '4639°C, 8398°F', '10.28', '95.95', 'Solid', '98Mo', '4d5 5s1', '7439-98-7', 'Molybdenum is used in steel alloys, electrical contacts, and as a catalyst in the petroleum industry.')">
+    <p class="number">42</p>
+    <p class="symbol">Mo</p>
+    <p class="atomicNum">95.95</p>
+    <p class="name">Molybdenum</p>
+</div>
+
+
+<div class="element transitionMetals" onclick="showDetails('Tc', 'Technetium', '43', '98', 'Technetium is a synthetic element that was the first element to be artificially produced. It is used in radiography.',
+        '5', '5', 'd', '220°C, 428°F', '426°C, 799°F', '11.5', '98', 'Solid', '98Tc', '4d5 5s2', '7440-26-8', 'Technetium is used in medical imaging, as a radiotracer in nuclear medicine, and in electronics.')">
+    <p class="number">43</p>
+    <p class="symbol">Tc</p>
+    <p class="atomicNum">98</p>
+    <p class="name">Technetium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Ru', 'Ruthenium', '44', '101.07', 'Ruthenium is a rare, precious transition metal that is used in electronics and jewelry.',
+        '8', '5', 'd', '2334°C, 4233°F', '4150°C, 7502°F', '12.37', '101.07', 'Solid', '101Ru', '4d7 5s1', '7440-18-8', 'Ruthenium is used in catalysts, electrical contacts, and wear-resistant coatings.')">
+    <p class="number">44</p>
+    <p class="symbol">Ru</p>
+    <p class="atomicNum">101.07</p>
+    <p class="name">Ruthenium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Rh', 'Rhodium', '45', '102.91', 'Rhodium is a rare, silvery-white transition metal used in catalytic converters and jewelry.',
+        '9', '5', 'd', '1964°C, 3567°F', '3695°C, 6673°F', '12.41', '102.91', 'Solid', '103Rh', '4d8 5s1', '7440-16-6', 'Rhodium is used in catalytic converters, hydrogenation reactions, and in automotive exhaust systems.')">
+    <p class="number">45</p>
+    <p class="symbol">Rh</p>
+    <p class="atomicNum">102.91</p>
+    <p class="name">Rhodium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Pd', 'Palladium', '46', '106.42', 'Palladium is a rare, silvery-white metal used in electronics, dentistry, and hydrogen storage.',
+        '10', '5', 'd', '1554°C, 2830°F', '2963°C, 5365°F', '12.02', '106.42', 'Solid', '106Pd', '4d10', '7440-05-3', 'Palladium is used in catalytic converters, hydrogen storage, and in the electronics industry.')">
+    <p class="number">46</p>
+    <p class="symbol">Pd</p>
+    <p class="atomicNum">106.42</p>
+    <p class="name">Palladium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Ag', 'Silver', '47', '107.87', 'Silver has been used since ancient times for currency, jewelry, and utensils.',
+        '11', '5', 'd', '961.8°C, 1763.2°F', '2162°C, 3924°F', '10.49', '107.87', 'Solid', '107Ag', '4d10 5s1', '7440-22-4', 'Silver is used in jewelry, electronics, and as a currency in some cases.')">
+    <p class="number">47</p>
+    <p class="symbol">Ag</p>
+    <p class="atomicNum">107.87</p>
+    <p class="name">Silver</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Cd', 'Cadmium', '48', '112.41', 'Cadmium is a soft, bluish-white metal that is used in rechargeable batteries and in the electroplating industry.',
+        '12', '5', 'd', '321°C, 609.8°F', '767°C, 1413°F', '8.65', '112.41', 'Solid', '112Cd', '4d10 5s2', '7440-43-9', 'Cadmium is used in batteries, electroplating, and as a stabilizer in plastics.')">
+    <p class="number">48</p>
+    <p class="symbol">Cd</p>
+    <p class="atomicNum">112.41</p>
+    <p class="name">Cadmium</p>
+</div>
+
+<div class="element postTransitionMetals" onclick="showDetails('In', 'Indium', '49', '114.82', 'Indium is a soft, silvery-white metal used in semiconductors and liquid crystal displays (LCDs).',
+        '13', '5', 'p', '156.6°C, 313.9°F', '2072°C, 3762°F', '7.31', '114.82', 'Solid', '115In', '4d10 5s2 5p1', '7440-74-6', 'Indium is used in electronics, solar panels, and touch screens.')">
+    <p class="number">49</p>
+    <p class="symbol">In</p>
+    <p class="atomicNum">114.82</p>
+    <p class="name">Indium</p>
+</div>
+
+<div class="element postTransitionMetals" onclick="showDetails('Sn', 'Tin', '50', '118.71', 'Tin is a soft, silvery-white metal used in soldering and coating other metals to prevent corrosion.',
+        '14', '5', 'p', '231.9°C, 449.4°F', '2602°C, 4716°F', '7.31', '118.71', 'Solid', '119Sn', '5s2 4d10 5p2', '7440-31-5', 'Tin is used in soldering, in coating metals, and in the production of alloys like bronze.')">
+    <p class="number">50</p>
+    <p class="symbol">Sn</p>
+    <p class="atomicNum">118.71</p>
+    <p class="name">Tin</p>
+</div>
+
+<div class="element metalloids" onclick="showDetails('Sb', 'Antimony', '51', '121.76', 'Antimony is a brittle, silvery-white metalloid used in flame retardants and semiconductors.',
+        '15', '5', 'p', '630°C, 1166°F', '1587°C, 2889°F', '6.697', '121.76', 'Solid', '121Sb', '5s2 4d10 5p3', '7440-36-0', 'Antimony is used in flame retardants, lead alloys, and in semiconductor materials.')">
+    <p class="number">51</p>
+    <p class="symbol">Sb</p>
+    <p class="atomicNum">121.76</p>
+    <p class="name">Antimony</p>
+</div>
+
+<div class="element metalloids" onclick="showDetails('Te', 'Tellurium', '52', '127.60', 'Tellurium is a brittle, silvery-white metalloid used in electronics and solar cells.',
+        '16', '5', 'p', '449.5°C, 841.1°F', '988°C, 1810°F', '6.24', '127.60', 'Solid', '128Te', '5s2 4d10 5p4', '13494-80-9', 'Tellurium is used in solar panels, thermoelectric devices, and in electronics.')">
+    <p class="number">52</p>
+    <p class="symbol">Te</p>
+    <p class="atomicNum">127.60</p>
+    <p class="name">Tellurium</p>
+</div>
+
+<div class="element halogens" onclick="showDetails('I', 'Iodine', '53', '126.90', 'Iodine is a halogen used in medical disinfectants, iodized salt, and in photography.',
+        '17', '5', 'p', '113.7°C, 236.7°F', '184.3°C, 363.7°F', '4.933', '126.90', 'Solid', '127I', '5s2 4d10 5p5', '7553-56-2', 'Iodine is used in medicine, as an antiseptic, and in the production of certain dyes and chemicals.')">
+    <p class="number">53</p>
+    <p class="symbol">I</p>
+    <p class="atomicNum">126.90</p>
+    <p class="name">Iodine</p>
+</div>
+
+
+<div class="element nobleGases" onclick="showDetails('Xe', 'Xenon', '54', '131.29', 'Xenon is a colorless, dense noble gas used in lighting and anesthesia.',
+        '18', '5', 'p', '-108.1°C, -162.6°F', '-108.1°C, -162.6°F', '5.894', '131.29', 'Gas', '131Xe', '5s2 4d10 5p6', '7440-63-3', 'Xenon is used in high-intensity lamps, in medical anesthesia, and in imaging equipment.')">
+    <p class="number">54</p>
+    <p class="symbol">Xe</p>
+    <p class="atomicNum">131.29</p>
+    <p class="name">Xenon</p>
+</div>
+
+<!--row 5-->
+<div class="element alkaliMetals" onclick="showDetails('Cs', 'Cesium', '55', '132.91', 'Cesium is a soft, gold-colored, and highly reactive alkali metal used in atomic clocks and radiation detection.',
+        '1', '6', 's', '28.44°C, 83.23°F', '671°C, 1240°F', '1.93', '132.91', 'Solid', '133Cs', '6s1', '7440-46-2', 'Cesium is used in atomic clocks, as a getter in vacuum tubes, and in medical applications.')">
+    <p class="number">55</p>
+    <p class="symbol">Cs</p>
+    <p class="atomicNum">132.91</p>
+    <p class="name">Cesium</p>
+</div>
+
+<div class="element alkaliEarthMetals" onclick="showDetails('Ba', 'Barium', '56', '137.33', 'Barium is a soft, silvery-white alkali earth metal used in medical imaging and as a component in fireworks.',
+        '2', '6', 's', '727°C, 1341°F', '1897°C, 3447°F', '3.62', '137.33', 'Solid', '137Ba', '6s2', '7440-39-3', 'Barium is used in medical X-ray imaging, in the production of glass, and in fireworks.')">
+    <p class="number">56</p>
+    <p class="symbol">Ba</p>
+    <p class="atomicNum">137.33</p>
+    <p class="name">Barium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('La-Lu', 'Lanthanoids', '57-71', '138.91-175.0', 'Lanthanoids are a series of 15 chemical elements with similar properties, used in manufacturing electronics and catalysts.',
+        '3', '6', 'f', '600°C, 1112°F', '3383°C, 6121°F', '6.145', 'La-Lu', '4f', '7440-00-8', 'Lanthanoids are used in electronics, high-performance magnets, and in petroleum refining.')">
+    <p class="number">57-71</p>
+    <p class="symbol smallerFont">La-Lu</p>
+    <p class="atomicNum">138.91-175.0</p>
+    <p class="name">Lanthanoids</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Hf', 'Hafnium', '72', '178.49', 'Hafnium is a dense, corrosion-resistant metal used in nuclear reactors and aerospace applications.',
+        '4', '6', 'd', '2233°C, 4031°F', '4603°C, 8327°F', '13.31', '178.49', 'Solid', '178Hf', '4d2 5s2', '7440-58-6', 'Hafnium is used in nuclear reactors, in high-temperature coatings, and in aerospace industries.')">
+    <p class="number">72</p>
+    <p class="symbol">Hf</p>
+    <p class="atomicNum">178.49</p>
+    <p class="name">Hafnium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Ta', 'Tantalum', '73', '180.95', 'Tantalum is a corrosion-resistant metal used in electronics and surgical implants.',
+        '5', '6', 'd', '3017°C, 5463°F', '5458°C, 9866°F', '16.6', '180.95', 'Solid', '180Ta', '5d3 6s2', '7440-25-7', 'Tantalum is used in electronics, surgical implants, and as a high-performance material in aerospace industries.')">
+    <p class="number">73</p>
+    <p class="symbol">Ta</p>
+    <p class="atomicNum">180.95</p>
+    <p class="name">Tantalum</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('W', 'Tungsten', '74', '183.84', 'Tungsten is a very dense metal with the highest melting point of all metals, used in light bulb filaments and aerospace components.',
+        '6', '6', 'd', '3422°C, 6192°F', '5555°C, 10003°F', '19.25', '183.84', 'Solid', '183W', '5d4 6s2', '7440-33-7', 'Tungsten is used in light bulb filaments, in the aerospace industry, and in the production of high-performance alloys.')">
+    <p class="number">74</p>
+    <p class="symbol">W</p>
+    <p class="atomicNum">183.84</p>
+    <p class="name">Tungsten</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Re', 'Rhenium', '75', '186.21', 'Rhenium is a rare metal used in jet engines, electrical contacts, and as a catalyst.',
+        '7', '6', 'd', '3186°C, 5767°F', '5630°C, 10106°F', '21.02', '186.21', 'Solid', '186Re', '5d5 6s2', '7440-15-5', 'Rhenium is used in jet engines, as a catalyst in petroleum refining, and in electrical contacts.')">
+    <p class="number">75</p>
+    <p class="symbol">Re</p>
+    <p class="atomicNum">186.21</p>
+    <p class="name">Rhenium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Os', 'Osmium', '76', '190.23', 'Osmium is a dense, blue-grey metal used in fountain pen tips, electrical contacts, and in the aerospace industry.',
+        '8', '6', 'd', '3033°C, 5491°F', '5027°C, 9079°F', '22.59', '190.23', 'Solid', '190Os', '5d6 6s2', '7440-04-2', 'Osmium is used in fountain pen tips, electrical contacts, and in scientific instruments.')">
+    <p class="number">76</p>
+    <p class="symbol">Os</p>
+    <p class="atomicNum">190.23</p>
+    <p class="name">Osmium</p>
+</div>
+
+    
+<div class="element transitionMetals" onclick="showDetails('Ir', 'Iridium', '77', '192.22', 'Iridium is a dense, corrosion-resistant metal used in high-performance spark plugs and electronics.',
+'9', '5', 'd', '2446°C, 4449°F', '4130°C, 7450°F', '22.56', '192.22', 'Solid', '193Ir', '5d7 6s2', '7439-88-5', 'Iridium is used in spark plugs, in aerospace applications, and in high-temperature alloys.')">
+<p class="number">77</p>
+<p class="symbol">Ir</p>
+<p class="atomicNum">192.22</p>
+<p class="name">Iridium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Pt', 'Platinum', '78', '195.08', 'Platinum is a dense, precious metal used in jewelry, catalytic converters, and chemical reactions.',
+'10', '5', 'd', '1768°C, 3214°F', '3825°C, 6917°F', '21.45', '195.08', 'Solid', '195Pt', '5d9 6s1', '7440-06-4', 'Platinum is used in jewelry, catalytic converters, and in the production of chemical processes.')">
+<p class="number">78</p>
+<p class="symbol">Pt</p>
+<p class="atomicNum">195.08</p>
+<p class="name">Platinum</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Au', 'Gold', '79', '196.97', 'Gold is a yellow metal, highly valued for use in jewelry, coinage, and electronics.',
+'11', '5', 'd', '1064°C, 1947°F', '2856°C, 5181°F', '19.32', '196.97', 'Solid', '197Au', '5d10 6s1', '7440-57-5', 'Gold is used in jewelry, electronics, and as a standard for monetary systems.')">
+<p class="number">79</p>
+<p class="symbol">Au</p>
+<p class="atomicNum">196.97</p>
+<p class="name">Gold</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Hg', 'Mercury', '80', '200.59', 'Mercury is a liquid metal used in thermometers, barometers, and electrical switches.',
+'12', '5', 'd', '-38.83°C, -37.9°F', '356.73°C, 674.1°F', '13.534', '200.59', 'Liquid', '200Hg', '5d10 6s2', '7439-97-6', 'Mercury is used in thermometers, barometers, and in electrical devices, though it is highly toxic.')">
+<p class="number">80</p>
+<p class="symbol">Hg</p>
+<p class="atomicNum">200.59</p>
+<p class="name">Mercury</p>
+</div>
+
+<div class="element postTransitionMetals" onclick="showDetails('Tl', 'Thallium', '81', '204.38', 'Thallium is a soft metal used in electronics and in the production of optical lenses.',
+'13', '5', 'p', '304°C, 579°F', '1473°C, 2683°F', '11.85', '204.38', 'Solid', '204Tl', '6p1', '7440-28-0', 'Thallium is used in electronics, optical lenses, and in the production of high-quality glass.')">
+<p class="number">81</p>
+<p class="symbol">Tl</p>
+<p class="atomicNum">204.38</p>
+<p class="name">Thallium</p>
+</div>
+
+<div class="element postTransitionMetals" onclick="showDetails('Pb', 'Lead', '82', '207.2', 'Lead is a heavy metal used in batteries, shielding from radiation, and in construction.',
+'14', '5', 'p', '327.5°C, 621.5°F', '1749°C, 3180°F', '11.34', '207.2', 'Solid', '208Pb', '6p2', '7439-92-1', 'Lead is used in batteries, radiation shielding, and construction, but is toxic and should be handled with care.')">
+<p class="number">82</p>
+<p class="symbol">Pb</p>
+<p class="atomicNum">207.2</p>
+<p class="name">Lead</p>
+</div>
+
+<div class="element postTransitionMetals" onclick="showDetails('Bi', 'Bismuth', '83', '208.98', 'Bismuth is a brittle, pinkish metal used in cosmetics, pharmaceuticals, and as an alloy in high-performance materials.',
+'15', '5', 'p', '271.4°C, 520.5°F', '1560°C, 2840°F', '9.78', '208.98', 'Solid', '209Bi', '6p3', '7440-69-9', 'Bismuth is used in cosmetics, pharmaceuticals, and in low-melting alloys.')">
+<p class="number">83</p>
+<p class="symbol">Bi</p>
+<p class="atomicNum">208.98</p>
+<p class="name">Bismuth</p>
+</div>
+
+<div class="element metalloids" onclick="showDetails('Po', 'Polonium', '84', '209.98', 'Polonium is a radioactive element used in nuclear reactors and as an alpha particle source.',
+'16', '5', 'p', '254°C, 489.2°F', '962°C, 1764°F', '9.32', '209.98', 'Solid', '210Po', '6p4', '7440-08-6', 'Polonium is used in nuclear reactors and as a source of alpha particles for research and industrial purposes.')">
+<p class="number">84</p>
+<p class="symbol">Po</p>
+<p class="atomicNum">209.98</p>
+<p class="name">Polonium</p>
+</div>
+
+<div class="element halogens" onclick="showDetails('At', 'Astatine', '85', '210', 'Astatine is a radioactive element used in cancer treatment research and as a potential alpha particle source.',
+'17', '5', 'p', '302°C, 576°F', '337°C, 639°F', '6.0', '210', 'Solid', '210At', '6p5', '7440-41-7', 'Astatine is used in cancer research and as a source of alpha radiation for medical applications.')">
+<p class="number">85</p>
+<p class="symbol">At</p>
+<p class="atomicNum">210</p>
+<p class="name">Astatine</p>
+</div>
+
+<div class="element nobleGases" onclick="showDetails('Rn', 'Radon', '86', '222', 'Radon is a colorless, odorless, radioactive gas used in radiation therapy and can be a health hazard.',
+'18', '5', 'p', '-71°C, -94°F', '-62°C, -80°F', '9.73', '222', 'Gas', '222Rn', '5p6', '10043-92-2', 'Radon is used in radiation therapy and is a radioactive gas that can accumulate in homes, leading to health risks.')">
+<p class="number">86</p>
+<p class="symbol">Rn</p>
+<p class="atomicNum">222</p>
+<p class="name">Radon</p>
+</div>
+
+      <!--row6-->
+
+      <div class="element alkaliMetals" onclick="showDetails('Fr', 'Francium', '87', '223', 'Francium is a highly radioactive metal and one of the least stable elements. It is used in scientific research.',
+        '1', '7', 's', '80°C, 176°F', '300°C, 572°F', '1.87', '223', 'Solid', '223Fr', '7s1', '7440-73-5', 'Francium is used in research but is extremely rare and highly unstable.')">
+    <p class="number">87</p>
+    <p class="symbol">Fr</p>
+    <p class="atomicNum">223</p>
+    <p class="name">Francium</p>
+</div>
+
+<div class="element alkaliEarthMetals" onclick="showDetails('Ra', 'Radium', '88', '226', 'Radium is a radioactive metal used in medical applications, though it is no longer commonly used due to its health risks.',
+        '2', '7', 's', '700°C, 1292°F', '1413°C, 2575°F', '5.5', '226', 'Solid', '226Ra', '7s2', '7440-14-4', 'Radium was once used in luminous paints and medical treatments, though its radioactivity poses serious health risks.')">
+    <p class="number">88</p>
+    <p class="symbol">Ra</p>
+    <p class="atomicNum">226</p>
+    <p class="name">Radium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Ac-Cf', 'Actinoids', '89-103', '227-251', 'The actinoid series includes elements used in nuclear reactors, with some being highly radioactive.',
+        '3', '7', 'f', 'No Data', 'No Data', 'No Data', 'No Data', 'Solid', 'No Data', 'No Data', 'Actinoids include elements like Uranium and Plutonium, and they are key for nuclear energy and weapons.')">
+    <p class="number">89-103</p>
+    <p class="symbol smallerFont">Ac-Cf</p>
+    <p class="atomicNum">227 - 251</p>
+    <p class="name">Actinoids</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Rf', 'Rutherfordium', '104', '267', 'Rutherfordium is a synthetic element used in research to study the properties of heavy elements.',
+        '4', '7', 'd', 'No Data', 'No Data', 'No Data', '267', 'Solid', 'No Data', 'No Data', 'Rutherfordium is a synthetic element and has limited practical applications, mainly for scientific research.')">
+    <p class="number">104</p>
+    <p class="symbol">Rf</p>
+    <p class="atomicNum">267</p>
+    <p class="name">Rutherfordium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Db', 'Dubnium', '105', '270', 'Dubnium is a synthetic element with applications mainly in scientific research, particularly in the field of nuclear chemistry.',
+        '5', '7', 'd', 'No Data', 'No Data', 'No Data', '270', 'Solid', 'No Data', 'No Data', 'Dubnium is used in nuclear research and has limited commercial or industrial applications.')">
+    <p class="number">105</p>
+    <p class="symbol">Db</p>
+    <p class="atomicNum">270</p>
+    <p class="name">Dubnium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Sg', 'Seaborgium', '106', '271', 'Seaborgium is a synthetic element that is primarily used for research in nuclear chemistry.',
+        '6', '7', 'd', 'No Data', 'No Data', 'No Data', '271', 'Solid', 'No Data', 'No Data', 'Seaborgium is used in nuclear research, and its applications are mainly for scientific studies on heavy elements.')">
+    <p class="number">106</p>
+    <p class="symbol">Sg</p>
+    <p class="atomicNum">271</p>
+    <p class="name">Seaborgium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Bh', 'Bohrium', '107', '270', 'Bohrium is a synthetic element, and its use is limited to research in the field of nuclear science.',
+        '7', '7', 'd', 'No Data', 'No Data', 'No Data', '270', 'Solid', 'No Data', 'No Data', 'Bohrium is primarily used for research purposes and has no practical commercial applications.')">
+    <p class="number">107</p>
+    <p class="symbol">Bh</p>
+    <p class="atomicNum">270</p>
+    <p class="name">Bohrium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Hs', 'Hassium', '108', '277', 'Hassium is a synthetic element used for research in the area of heavy element chemistry.',
+        '8', '7', 'd', 'No Data', 'No Data', 'No Data', '277', 'Solid', 'No Data', 'No Data', 'Hassium is used in scientific studies of heavy elements and nuclear chemistry.')">
+    <p class="number">108</p>
+    <p class="symbol">Hs</p>
+    <p class="atomicNum">277</p>
+    <p class="name">Hassium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Mt', 'Meitnerium', '109', '276', 'Meitnerium is a synthetic element that is used primarily in nuclear research.',
+        '9', '7', 'd', 'No Data', 'No Data', 'No Data', '276', 'Solid', 'No Data', 'No Data', 'Meitnerium is used in nuclear research, and has no commercial or industrial applications.')">
+    <p class="number">109</p>
+    <p class="symbol">Mt</p>
+    <p class="atomicNum">276</p>
+    <p class="name">Meitnerium</p>
+</div>
+
+    
+<div class="element transitionMetals" onclick="showDetails('Ds', 'Darmstadtium', '110', '281', 'Darmstadtium is a synthetic element with no known practical applications and is primarily used for scientific research in nuclear chemistry.',
+'5', '7', 'd', 'No Data', 'No Data', 'No Data', '281', 'Solid', 'No Data', 'No Data', 'Darmstadtium has no major uses outside of scientific research due to its synthetic nature and short-lived isotopes.')">
+<p class="number">110</p>
+<p class="symbol">Ds</p>
+<p class="atomicNum">281</p>
+<p class="name">Darmstadtium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Rg', 'Roentgenium', '111', '280', 'Roentgenium is a synthetic element with no known practical applications outside of scientific research, particularly in the field of nuclear science.',
+'6', '7', 'd', 'No Data', 'No Data', 'No Data', '280', 'Solid', 'No Data', 'No Data', 'Roentgenium is primarily used in scientific research and nuclear chemistry studies.')">
+<p class="number">111</p>
+<p class="symbol">Rg</p>
+<p class="atomicNum">280</p>
+<p class="name">Roentgenium</p>
+</div>
+
+<div class="element transitionMetals" onclick="showDetails('Cn', 'Copernicium', '112', '285', 'Copernicium is a synthetic element with no known practical applications and is primarily used for scientific research in nuclear chemistry.',
+'7', '7', 'd', 'No Data', 'No Data', 'No Data', '285', 'Solid', 'No Data', 'No Data', 'Copernicium is mainly used in nuclear research due to its short-lived and synthetic nature.')">
+<p class="number">112</p>
+<p class="symbol">Cn</p>
+<p class="atomicNum">285</p>
+<p class="name">Copernicium</p>
+</div>
+
+<div class="element postTransitionMetals" onclick="showDetails('Nh', 'Nihonium', '113', '284', 'Nihonium is a synthetic element with no known practical applications outside of scientific research in the field of nuclear chemistry.',
+'1', '7', 'p', 'No Data', 'No Data', 'No Data', '284', 'Solid', 'No Data', 'No Data', 'Nihonium is used mainly for research purposes due to its synthetic nature.')">
+<p class="number">113</p>
+<p class="symbol">Nh</p>
+<p class="atomicNum">284</p>
+<p class="name">Nihonium</p>
+</div>
+
+<div class="element postTransitionMetals" onclick="showDetails('Fl', 'Flerovium', '114', '289', 'Flerovium is a synthetic element with no known practical applications outside of scientific research, primarily used for studies in nuclear science.',
+'2', '7', 'p', 'No Data', 'No Data', 'No Data', '289', 'Solid', 'No Data', 'No Data', 'Flerovium is primarily used for nuclear research and studies due to its synthetic nature.')">
+<p class="number">114</p>
+<p class="symbol">Fl</p>
+<p class="atomicNum">289</p>
+<p class="name">Flerovium</p>
+</div>
+
+<div class="element postTransitionMetals" onclick="showDetails('Mc', 'Moscovium', '115', '290', 'Moscovium is a synthetic element with limited practical applications, primarily used in nuclear research for studying heavy elements.',
+'3', '7', 'p', 'No Data', 'No Data', 'No Data', '290', 'Solid', 'No Data', 'No Data', 'Moscovium is primarily used for scientific research and studies due to its short-lived and synthetic nature.')">
+<p class="number">115</p>
+<p class="symbol">Mc</p>
+<p class="atomicNum">290</p>
+<p class="name">Moscovium</p>
+</div>
+
+<div class="element postTransitionMetals" onclick="showDetails('Lv', 'Livermorium', '116', '293', 'Livermorium is a synthetic element used primarily for research in nuclear chemistry and studies of heavy elements.',
+'4', '7', 'p', 'No Data', 'No Data', 'No Data', '293', 'Solid', 'No Data', 'No Data', 'Livermorium is used for scientific research and studies of heavy and synthetic elements.')">
+<p class="number">116</p>
+<p class="symbol">Lv</p>
+<p class="atomicNum">293</p>
+<p class="name">Livermorium</p>
+</div>
+
+<div class="element halogens" onclick="showDetails('Ts', 'Tennessine', '117', '294', 'Tennessine is a synthetic element with no known practical applications outside of scientific research, particularly in nuclear science.',
+'5', '7', 'p', 'No Data', 'No Data', 'No Data', '294', 'Solid', 'No Data', 'No Data', 'Tennessine is mainly used for nuclear research and scientific studies due to its synthetic nature.')">
+<p class="number">117</p>
+<p class="symbol">Ts</p>
+<p class="atomicNum">294</p>
+<p class="name">Tennessine</p>
+</div>
+
+<div class="element nobleGases" onclick="showDetails('Og', 'Oganesson', '118', '294', 'Oganesson is a synthetic element with no known practical applications and is used primarily for scientific research in nuclear chemistry.',
+'6', '8', 'p', 'No Data', 'No Data', 'No Data', '294', 'Solid', 'No Data', 'No Data', 'Oganesson is primarily used for nuclear research and studies due to its synthetic nature.')">
+<p class="number">118</p>
+<p class="symbol">Og</p>
+<p class="atomicNum">294</p>
+<p class="name">Oganesson</p>
+</div>
+
+    </div>
+
+
+    <div class="container5">
+        <div class="element lanthanoids" onclick="showDetails('La', 'Lanthanum', '57', '138.905', 'Lanthanum is a soft, malleable, and ductile metal, used in manufacturing carbon arc lamps and other lighting applications.',
+        '4', '6', 'f', 'No Data', 'No Data', 'No Data', '138.905', 'Solid', 'No Data', 'No Data', 'Lanthanum is mainly used in specialized lighting applications and is an important element in catalysts.')">
+    <p class="number">57</p>
+    <p class="symbol">La</p>
+    <p class="atomicNum">138.905</p>
+    <p class="name">Lanthanum</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Ce', 'Cerium', '58', '140.116', 'Cerium is a rare earth metal used in catalytic converters and as a catalyst in various chemical reactions.',
+        '4', '6', 'f', 'No Data', 'No Data', 'No Data', '140.116', 'Solid', 'No Data', 'No Data', 'Cerium is used in catalytic converters, as a catalyst in petroleum refining, and in manufacturing of glass.')">
+    <p class="number">58</p>
+    <p class="symbol">Ce</p>
+    <p class="atomicNum">140.116</p>
+    <p class="name">Cerium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Pr', 'Praseodymium', '59', '140.907', 'Praseodymium is used in the manufacturing of high-strength alloys and magnets.',
+        '4', '6', 'f', 'No Data', 'No Data', 'No Data', '140.907', 'Solid', 'No Data', 'No Data', 'Praseodymium is used in high-strength alloys and permanent magnets for various industrial applications.')">
+    <p class="number">59</p>
+    <p class="symbol">Pr</p>
+    <p class="atomicNum">140.907</p>
+    <p class="name">Praseodymium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Nd', 'Neodymium', '60', '144.242', 'Neodymium is used in powerful magnets, electronics, and lasers.',
+        '4', '6', 'f', 'No Data', 'No Data', 'No Data', '144.242', 'Solid', 'No Data', 'No Data', 'Neodymium is essential in the manufacturing of powerful magnets for motors, wind turbines, and electronics.')">
+    <p class="number">60</p>
+    <p class="symbol">Nd</p>
+    <p class="atomicNum">144.242</p>
+    <p class="name">Neodymium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Pm', 'Promethium', '61', '145', 'Promethium is a radioactive element used in nuclear batteries and certain kinds of research.',
+        '4', '6', 'f', 'No Data', 'No Data', 'No Data', '145', 'Solid', 'No Data', 'No Data', 'Promethium is mainly used for powering nuclear batteries and in various research applications due to its radioactive properties.')">
+    <p class="number">61</p>
+    <p class="symbol">Pm</p>
+    <p class="atomicNum">145</p>
+    <p class="name">Promethium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Sm', 'Samarium', '62', '150.36', 'Samarium is used in magnets, as a catalyst, and in certain nuclear reactors.',
+        '4', '6', 'f', 'No Data', 'No Data', 'No Data', '150.36', 'Solid', 'No Data', 'No Data', 'Samarium is widely used in high-performance magnets and in certain specialized nuclear reactors.')">
+    <p class="number">62</p>
+    <p class="symbol">Sm</p>
+    <p class="atomicNum">150.36</p>
+    <p class="name">Samarium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Eu', 'Europium', '63', '151.964', 'Europium is used in phosphorescent and fluorescent applications, particularly in LED lighting.',
+        '4', '6', 'f', 'No Data', 'No Data', 'No Data', '151.964', 'Solid', 'No Data', 'No Data', 'Europium is used in phosphorescent applications and in the production of various lighting technologies like LEDs and TV screens.')">
+    <p class="number">63</p>
+    <p class="symbol">Eu</p>
+    <p class="atomicNum">151.964</p>
+    <p class="name">Europium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Gd', 'Gadolinium', '64', '157.25', 'Gadolinium is used in medical imaging, nuclear reactors, and various high-tech industries.',
+        '4', '6', 'f', 'No Data', 'No Data', 'No Data', '157.25', 'Solid', 'No Data', 'No Data', 'Gadolinium is a key element used in medical imaging technologies and in neutron radiography for reactors.')">
+    <p class="number">64</p>
+    <p class="symbol">Gd</p>
+    <p class="atomicNum">157.25</p>
+    <p class="name">Gadolinium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Tb', 'Terbium', '65', '158.925', 'Terbium is used in phosphorescent and fluorescent applications, and also in magnets.',
+        '4', '6', 'f', '920°C 1688°F 1193 K ', '3464°C, 6267°F, 3737 K', '6.15 ', '158.925', 'Solid', '158.925  ', '159Tb', '7440-27-9','Terbium is used for green phosphorescence and in the development of high-performance magnets.')">
+    <p class="number">65</p>
+    <p class="symbol">Tb</p>
+    <p class="atomicNum">158.925</p>
+    <p class="name">Terbium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Dy', 'Dysprosium', '66', '162.5', 'Dysprosium is used in nuclear reactors, permanent magnets, and in the manufacturing of high-strength alloys.',
+'4', '6', 'f', 'No Data', 'No Data', 'No Data', '162.5', 'Solid', 'No Data', 'No Data', 'Dysprosium is mainly used in the production of permanent magnets and nuclear reactor control rods.')">
+<p class="number">66</p>
+<p class="symbol">Dy</p>
+<p class="atomicNum">162.5</p>
+<p class="name">Dysprosium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Ho', 'Holmium', '67', '164.930', 'Holmium is used in nuclear reactors and in certain types of lasers.',
+'4', '6', 'f', 'No Data', 'No Data', 'No Data', '164.930', 'Solid', 'No Data', 'No Data', 'Holmium is primarily used in nuclear reactors and high-performance laser systems.')">
+<p class="number">67</p>
+<p class="symbol">Ho</p>
+<p class="atomicNum">164.930</p>
+<p class="name">Holmium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Er', 'Erbium', '68', '167.259', 'Erbium is used in fiber optic communications and high-strength magnets.',
+'4', '6', 'f', 'No Data', 'No Data', 'No Data', '167.259', 'Solid', 'No Data', 'No Data', 'Erbium is used in laser technology, fiber optic amplifiers, and various other advanced materials.')">
+<p class="number">68</p>
+<p class="symbol">Er</p>
+<p class="atomicNum">167.259</p>
+<p class="name">Erbium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Tm', 'Thulium', '69', '168.934', 'Thulium is used in medical imaging and radiation therapy.',
+'4', '6', 'f', 'No Data', 'No Data', 'No Data', '168.934', 'Solid', 'No Data', 'No Data', 'Thulium is used in radiation therapy and in X-ray equipment for medical imaging.')">
+<p class="number">69</p>
+<p class="symbol">Tm</p>
+<p class="atomicNum">168.934</p>
+<p class="name">Thulium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Yb', 'Ytterbium', '70', '173.04', 'Ytterbium is used in lasers and as a doping agent in fiber optic cables.',
+'4', '6', 'f', 'No Data', 'No Data', 'No Data', '173.04', 'Solid', 'No Data', 'No Data', 'Ytterbium is used in lasers, fiber optic systems, and as a component in high-performance alloys.')">
+<p class="number">70</p>
+<p class="symbol">Yb</p>
+<p class="atomicNum">173.04</p>
+<p class="name">Ytterbium</p>
+</div>
+
+<div class="element lanthanoids" onclick="showDetails('Lu', 'Lutetium', '71', '175', 'Lutetium is used in positron emission tomography (PET) and high-energy physics.',
+'4', '6', 'f', 'No Data', 'No Data', 'No Data', '175', 'Solid', 'No Data', 'No Data','No Data', 'Lutetium is primarily used in medical imaging technologies, particularly in positron emission tomography (PET) scanners.')">
+<p class="number">71</p>
+<p class="symbol">Lu</p>
+<p class="atomicNum">175</p>
+<p class="name">Lutetium</p>
+</div>
+
+    
+
+    <!--row 8-->
+    <div class="element actinoids" onclick="showDetails('Ac', 'Actinium', '89', '227', 'Actinium is used in radiation therapy and as a neutron source.',
+    '5', '7', 'f', 'No Data', 'No Data', 'No Data', '227', 'Solid', 'No Data', 'No Data', 'Actinium is used as a neutron source in research and radiation therapy. Melting Point: 1,050°C.')">
+    <p class="number">89</p>
+    <p class="symbol">Ac</p>
+    <p class="atomicNum">227</p>
+    <p class="name">Actinium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Th', 'Thorium', '90', '232.038', 'Thorium is used as a nuclear fuel and in some types of nuclear reactors.',
+    '5', '7', 'f', 'No Data', 'No Data', 'No Data', '232.038', 'Solid', 'No Data', 'No Data', 'Thorium is used in nuclear reactors and as an alternative nuclear fuel. Melting Point: 1,750°C.')">
+    <p class="number">90</p>
+    <p class="symbol">Th</p>
+    <p class="atomicNum">232.038</p>
+    <p class="name">Thorium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Pa', 'Protactinium', '91', '231.035', 'Protactinium is used in nuclear technology and as a radiation source.',
+    '5', '7', 'f', 'No Data', 'No Data', 'No Data', '231.035', 'Solid', 'No Data', 'No Data', 'Protactinium is used in nuclear reactors as a radiation source. Melting Point: 1,500°C.')">
+    <p class="number">91</p>
+    <p class="symbol">Pa</p>
+    <p class="atomicNum">231.035</p>
+    <p class="name">Protactinium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('U', 'Uranium', '92', '238.028', 'Uranium is used as a fuel in nuclear reactors and in nuclear weapons.',
+    '5', '7', 'f', 'No Data', 'No Data', 'No Data', '238.028', 'Solid', 'No Data', 'No Data', 'Uranium is primarily used in nuclear reactors and weapons. Melting Point: 1,132°C.')">
+    <p class="number">92</p>
+    <p class="symbol">U</p>
+    <p class="atomicNum">238.028</p>
+    <p class="name">Uranium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Np', 'Neptunium', '93', '237', 'Neptunium is used in nuclear reactors and for the production of plutonium.',
+    '5', '7', 'f', 'No Data', 'No Data', 'No Data', '237', 'Solid', 'No Data', 'No Data', 'Neptunium is used in reactors and for the production of plutonium. Melting Point: 644°C.')">
+    <p class="number">93</p>
+    <p class="symbol">Np</p>
+    <p class="atomicNum">237</p>
+    <p class="name">Neptunium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Pu', 'Plutonium', '94', '244', 'Plutonium is used in nuclear reactors, nuclear weapons, and as a power source in space missions.',
+    '5', '7', 'f', 'No Data', 'No Data', 'No Data', '244', 'Solid', 'No Data', 'No Data', 'Plutonium is used in nuclear power and weapons, and as a power source for space missions. Melting Point: 640°C.')">
+    <p class="number">94</p>
+    <p class="symbol">Pu</p>
+    <p class="atomicNum">244</p>
+    <p class="name">Plutonium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Am', 'Americium', '95', '243', 'Americium is used in smoke detectors and in nuclear batteries.',
+    '5', '7', 'f', 'No Data', 'No Data', 'No Data', '243', 'Solid', 'No Data', 'No Data', 'Americium is primarily used in smoke detectors and nuclear batteries. Melting Point: 1,175°C.')">
+    <p class="number">95</p>
+    <p class="symbol">Am</p>
+    <p class="atomicNum">243</p>
+    <p class="name">Americium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Cm', 'Curium', '96', '247', 'Curium is used in nuclear reactors and in the production of alpha particle radiation.',
+    '5', '7', 'f', 'No Data', 'No Data', 'No Data', '247', 'Solid', 'No Data', 'No Data', 'Curium is used in nuclear reactors and alpha particle radiation production. Melting Point: 1,500°C.')">
+    <p class="number">96</p>
+    <p class="symbol">Cm</p>
+    <p class="atomicNum">247</p>
+    <p class="name">Curium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Bk', 'Berkelium', '97', '247', 'Berkelium is used in radiation therapy and for research in nuclear chemistry.',
+'5', '7', 'f', 'No Data', 'No Data', 'No Data', '247', 'Solid', 'No Data', 'No Data', 'Berkelium is used for research in nuclear chemistry. Melting Point: No Data.')">
+<p class="number">97</p>
+<p class="symbol">Bk</p>
+<p class="atomicNum">247</p>
+<p class="name">Berkelium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Cf', 'Californium', '98', '251', 'Californium is used in neutron radiography and as a source for nuclear reactors.',
+'5', '7', 'f', 'No Data', 'No Data', 'No Data', '251', 'Solid', 'No Data', 'No Data', 'Californium is used in neutron radiography and as a nuclear reactor source. Melting Point: No Data.')">
+<p class="number">98</p>
+<p class="symbol">Cf</p>
+<p class="atomicNum">251</p>
+<p class="name">Californium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Es', 'Einsteinium', '99', '252', 'Einsteinium is used in nuclear research, particularly in the production of heavier elements.',
+'5', '7', 'f', 'No Data', 'No Data', 'No Data', '252', 'Solid', 'No Data', 'No Data', 'Einsteinium is used in nuclear research and production of heavier elements. Melting Point: No Data.')">
+<p class="number">99</p>
+<p class="symbol">Es</p>
+<p class="atomicNum">252</p>
+<p class="name">Einsteinium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Fm', 'Fermium', '100', '257', 'Fermium is used in nuclear research, primarily for the creation of heavier elements.',
+'5', '7', 'f', 'No Data', 'No Data', 'No Data', '257', 'Solid', 'No Data', 'No Data', 'Fermium is used in nuclear research for the creation of heavier elements. Melting Point: No Data.')">
+<p class="number">100</p>
+<p class="symbol">Fm</p>
+<p class="atomicNum">257</p>
+<p class="name">Fermium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Md', 'Mendelevium', '101', '258', 'Mendelevium is used for research in nuclear chemistry and the synthesis of new elements.',
+'5', '7', 'f', 'No Data', 'No Data', 'No Data', '258', 'Solid', 'No Data', 'No Data', 'Mendelevium is used in the synthesis of new elements and nuclear chemistry research. Melting Point: No Data.')">
+<p class="number">101</p>
+<p class="symbol">Md</p>
+<p class="atomicNum">258</p>
+<p class="name">Mendelevium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('No', 'Nobelium', '102', '259', 'Nobelium is used in research to create new elements and in nuclear physics.',
+'5', '7', 'f', 'No Data', 'No Data', 'No Data', '259', 'Solid', 'No Data', 'No Data', 'Nobelium is used in creating new elements and nuclear physics research. Melting Point: No Data.')">
+<p class="number">102</p>
+<p class="symbol">No</p>
+<p class="atomicNum">259</p>
+<p class="name">Nobelium</p>
+</div>
+
+<div class="element actinoids" onclick="showDetails('Lr', 'Lawrencium', '103', '262', 'Lawrencium is used for research in nuclear chemistry and in the creation of new elements.',
+'5', '7', 'f', 'No Data', 'No Data', 'No Data', '262', 'Solid', 'No Data', 'No Data', 'Lawrencium is used for nuclear chemistry research and the creation of new elements. Melting Point: No Data.')">
+<p class="number">103</p>
+<p class="symbol">Lr</p>
+<p class="atomicNum">262</p>
+<p class="name">Lawrencium</p>
+</div>
+
+  
+  </div>
+</div>
+  <script src="../Javascript/script.js"></script>
+    
+</body>
+ 
+
+
+</html>

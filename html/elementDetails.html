@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/elementDetails.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Details</title>
+    <style>
+        /* Add some simple styling for the table and layout */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .history {
+            margin-top: 40px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="element-details">
+        <h2 id="elementName">Element Name</h2>
+        
+        <!-- Table to show element details -->
+        <table>
+            <tr>
+                <th>Group</th>
+                <td id="elementGroup">1</td>
+            </tr>
+            <tr>
+                <th>Period</th>
+                <td id="elementPeriod">1</td>
+            </tr>
+            <tr>
+                <th>Block</th>
+                <td id="elementBlock">s</td>
+            </tr>
+            <tr>
+                <th>Atomic Number</th>
+                <td id="elementAtomicNumber">1</td>
+            </tr>
+            <tr>
+                <th>Melting Point</th>
+                <td id="elementMeltingPoint">−259.16°C, −434.49°F, 13.99 K</td>
+            </tr>
+            <tr>
+                <th>Boiling Point</th>
+                <td id="elementBoilingPoint">−252.879°C, −423.182°F, 20.271 K</td>
+            </tr>
+            <tr>
+                <th>Density (g cm−3)</th>
+                <td id="elementDensity">0.000082</td>
+            </tr>
+            <tr>
+                <th>Relative Atomic Mass</th>
+                <td id="elementAtomicMass">1.008</td>
+            </tr>
+            <tr>
+                <th>State at 20°C</th>
+                <td id="elementState">Gas</td>
+            </tr>
+            <tr>
+                <th>Key Isotopes</th>
+                <td id="elementIsotopes">1H, 2H</td>
+            </tr>
+            <tr>
+                <th>Electron Configuration</th>
+                <td id="elementElectronConfig">1s1</td>
+            </tr>
+            <tr>
+                <th>CAS Number</th>
+                <td id="elementCASNumber">133-74-0</td>
+            </tr>
+        </table>
+        
+        <!-- History Section -->
+        <div class="history">
+            <h3>Uses</h3>
+            <p id="elementHistory">Hydrogen was discovered by Henry Cavendish in 1766. It is the lightest element in the periodic table and plays a crucial role in many chemical reactions. It was named from the Greek words "hydro" (water) and "genes" (creator), meaning "water-former," due to its ability to form water when combined with oxygen.</p>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    // Retrieve element details from localStorage
+    const elementDetails = JSON.parse(localStorage.getItem('elementDetails'));
+
+    if (elementDetails) {
+        document.getElementById('elementName').innerText = elementDetails.name;
+        document.getElementById('elementGroup').innerText = elementDetails.group || 'N/A';
+        document.getElementById('elementPeriod').innerText = elementDetails.period || 'N/A';
+        document.getElementById('elementBlock').innerText = elementDetails.block || 'N/A';
+        document.getElementById('elementAtomicNumber').innerText = elementDetails.number;
+        document.getElementById('elementMeltingPoint').innerText = elementDetails.meltingPoint;
+        document.getElementById('elementBoilingPoint').innerText = elementDetails.boilingPoint;
+        document.getElementById('elementDensity').innerText = elementDetails.density;
+        document.getElementById('elementAtomicMass').innerText = elementDetails.atomicMass;
+        document.getElementById('elementState').innerText = elementDetails.state;
+        document.getElementById('elementIsotopes').innerText = elementDetails.isotopes;
+        document.getElementById('elementElectronConfig').innerText = elementDetails.electronConfig;
+        document.getElementById('elementCASNumber').innerText = elementDetails.casNumber;
+        document.getElementById('elementHistory').innerText = elementDetails.history;
+    } else {
+        alert('No element details found.');
+    }
+  </script>
+
+</body>
+</html>

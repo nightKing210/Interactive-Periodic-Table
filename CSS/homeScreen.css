@@ -1,0 +1,220 @@
+
+p{
+    font-family: Arial, sans-serif,'Arial Narrow';
+    margin: 0%;
+}
+
+.Periodic{
+    font-size: 70px;
+    background-color: rgb(238, 227, 28);
+    font-weight: bold;
+    margin: 0px 0px 0px 400px;
+    display: inline-block;
+}
+
+.types{
+    position: relative;
+    top: 50px;
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 170px;
+    position: relative;
+    bottom: 30px
+    
+
+}
+
+.common{
+    display: inline-block;
+    color: white;
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+}
+
+
+.main{
+    width: 1082px;
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 50px;
+    /* border: solid; */
+}
+
+.container1,.container4,.container5{
+    display: grid;
+    grid-template-rows: 60px;
+    
+}
+
+
+
+
+.container1{
+    gap: 960px;
+    grid-template-columns: 60px 60px;
+}
+
+.container2,.container3{
+    display:flex;
+    flex-wrap: nowrap;
+    
+}
+
+.spacer{
+    width: 609px;
+    
+}
+
+.container4{
+
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    
+}
+
+.container5{
+    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px ;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    justify-content: center;
+
+
+}
+
+
+
+.element{
+    float: left;
+    background-color: rgb(206, 201, 201);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: rgba(0, 0, 0, 0.2);
+    border-right: rgba(0, 0, 0, 0.2);
+    border-width: thin;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.15s;
+    position: relative; 
+    z-index: 1; 
+    cursor: pointer;
+}
+
+.elements{
+   float: left;
+    background-color: rgb(206, 201, 201);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: rgba(0, 0, 0, 0.2);
+    border-right: rgba(0, 0, 0, 0.2);
+    border-width: thin;
+    width: 58px;
+    height: 55px;
+    padding-right: 2px;
+    transition: transform 0.15s;
+    cursor: pointer;
+     
+}
+
+.element:hover,.elements:hover{
+    transform: scale(1.1);
+    border: 0.09cm solid rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    margin: -6px;
+}
+
+
+.element:active,.elements:active{
+    background-color: rgba(59, 59, 59, 0.988);
+
+}
+
+
+
+.number,.symbol,.atomicNum,.name{
+    display: inline-block;
+    font-size: 5px;
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: center; 
+}
+
+.number,.symbol{
+    font-weight: bold;
+    
+ }
+
+.number{
+    font-size: 13px;
+    float: right;
+    position: relative;
+    right: 2px;
+    top: 5px;
+
+ }
+
+
+
+ .symbol{
+    font-size: 23px;
+    margin: 0%;
+    position: relative;
+    left: 5px;
+
+ }
+ .atomicNum,.name{
+    font-size: 9px;
+    position: relative;
+    left: 5px;
+
+ }
+ .atomicNum{
+    display: block;
+    position: relative;
+    top: 5px;
+ }
+
+
+ .smallerFont{
+    font-size: 15px;
+ }
+
+.nonMetal{
+    background-color: rgb(130, 203, 255);
+
+}
+.nobleGases{
+
+    background-color: rgb(157, 157, 157);
+
+}
+.alkaliMetals{
+    background-color: rgb(255, 97, 70);
+
+}
+.alkaliEarthMetals{
+    background-color: rgb(235, 210, 20);
+
+}
+.halogens{
+    background-color: rgb(4, 182, 162);
+
+}
+.transitionMetals{
+    background-color: rgb(29, 127, 197);
+
+}
+.lanthanoids{
+    background-color: rgb(92, 213, 112);
+
+}
+.actinoids{
+    background-color: rgb(63, 133, 47);
+
+}
+.metalloids{
+    background-color: rgb(150, 102, 246);
+
+}
+.postTransitionMetals{
+    background-color: rgb(233, 86, 238);
+
+}
+
